@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_medicine" label="Medicine" language="en" table="x_821343_hospital_patient_record">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_medicine</element>
+            <help/>
+            <hint/>
+            <label>Medicine</label>
+            <language>en</language>
+            <name>x_821343_hospital_patient_record</name>
+            <plural>Medicines</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-10-03 17:23:29</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Medicine</sys_name>
+            <sys_package display_value="Hospital Management" source="x_821343_hospital">33de8b2497d53110a3de7e121153af7e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Hospital Management">33de8b2497d53110a3de7e121153af7e</sys_scope>
+            <sys_update_name>sys_documentation_x_821343_hospital_patient_record_u_medicine_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-10-03 17:23:29</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

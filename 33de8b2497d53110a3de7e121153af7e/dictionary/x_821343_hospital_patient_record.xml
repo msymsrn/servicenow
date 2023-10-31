@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="9030136c97d53110a3de7e121153afeb" label="Patient Record" max_length="40" name="x_821343_hospital_patient_record" type="collection">
+        <element attributes="encode_utf8=false" label="Closed by" max_length="32" name="closed_by" read_only="true" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Date of Join" max_length="40" name="date_of_join" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" mandatory="true" max_length="100" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Number" max_length="40" name="number" read_only="true" type="string" use_dynamic_default="true"/>
+        <element attributes="edge_encryption_enabled=true" label="Patient Details" max_length="1000" name="patient_details" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="1" label="State" max_length="40" name="state" type="string">
+            <choice>
+                <element inactive_on_update="false" label="New" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="In Progress" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Complete" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Bed Number" max_length="40" name="u_bed_number" type="string"/>
+        <element label="Bill Amount" max_length="80" name="u_bill_amount" type="field_name"/>
+        <element label="Condition" max_length="80" name="u_condition" type="field_name"/>
+        <element label="Consultant" max_length="80" name="u_consultant" type="field_name"/>
+        <element attributes="encode_utf8=false" label="Created By" max_length="32" name="u_created_by" read_only="true" reference="sys_user" type="reference"/>
+        <element label="Current State" max_length="80" name="u_current_state" type="field_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="4000" name="u_description" type="string"/>
+        <element label="Diagnosis" max_length="80" name="u_diagnosis" type="field_name"/>
+        <element label="Dialysis" max_length="80" name="u_dialysis" type="field_name"/>
+        <element label="Doctor" max_length="80" name="u_doctor" type="field_name"/>
+        <element label="Duration" max_length="80" name="u_duration" type="field_name"/>
+        <element label="New Field Name" max_length="80" name="u_field_name_19" type="field_name"/>
+        <element label="New Field Name" max_length="80" name="u_field_name_20" type="field_name"/>
+        <element label="New Field Name" max_length="80" name="u_field_name_21" type="field_name"/>
+        <element label="New Field Name" max_length="80" name="u_field_name_22" type="field_name"/>
+        <element label="New Field Name" max_length="80" name="u_field_name_23" type="field_name"/>
+        <element label="New Field Name" max_length="80" name="u_field_name_24" type="field_name"/>
+        <element label="Hospital" max_length="80" name="u_hospital" type="field_name"/>
+        <element label="Injury Type" max_length="80" name="u_injury_type" type="field_name"/>
+        <element label="In patient" max_length="40" name="u_in_patient" type="boolean"/>
+        <element label="Kidney Stones" max_length="80" name="u_kidney_stones" type="field_name"/>
+        <element label="Location" max_length="80" name="u_location" type="field_name"/>
+        <element label="Medicine" max_length="80" name="u_medicine" type="field_name"/>
+        <element label="Nurse 1" max_length="80" name="u_nurse_1" type="field_name"/>
+        <element label="Nurse 2" max_length="80" name="u_nurse_2" type="field_name"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Patient Type" max_length="40" name="u_patient_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Cardio" sequence="0" value="cardio"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Diabetes" sequence="1" value="diabetes"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="2" value="Choice 3"/>
+                <element inactive_on_update="false" label="Neuro" sequence="2" value="neuro"/>
+                <element inactive_on_update="false" label="Derma" sequence="3" value="derma"/>
+                <element inactive_on_update="false" label="Ortho" sequence="4" value="ortho"/>
+                <element inactive_on_update="false" label="Kidney" sequence="5" value="kidney"/>
+            </choice>
+        </element>
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Price" max_length="20" name="u_price" type="price"/>
+        <element attributes="encode_utf8=false" label="Reference" max_length="32" name="u_reference" reference="cmdb_multisource_deny_class" type="reference"/>
+        <element label="Referred By" max_length="80" name="u_referred_by" type="field_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Short Description" max_length="1600" name="u_short_description" read_only="true" type="string"/>
+        <element label="Treatment" max_length="80" name="u_treatment" type="field_name"/>
+        <element attributes="encode_utf8=false" label="Update By" max_length="32" name="u_update_by" read_only="true" reference="sys_user" type="reference"/>
+        <element label="Urine Sample" max_length="80" name="u_urine_sample" type="field_name"/>
+        <index name="index">
+            <element name="closed_by"/>
+        </index>
+        <index name="index2">
+            <element name="name"/>
+        </index>
+        <index name="index3">
+            <element name="u_created_by"/>
+        </index>
+        <index name="index4">
+            <element name="u_reference"/>
+        </index>
+        <index name="index5">
+            <element name="u_update_by"/>
+        </index>
+    </element>
+</database>

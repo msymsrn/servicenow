@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>OnLoad Short Description Clear</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+    g_form.clearValue('u_short_description');
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-31 17:11:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>55c5b75c97523110a3de7e121153afbe</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>OnLoad Short Description Clear</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Hospital Management" source="x_821343_hospital">33de8b2497d53110a3de7e121153af7e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hospital Management">33de8b2497d53110a3de7e121153af7e</sys_scope>
+        <sys_update_name>sys_script_client_55c5b75c97523110a3de7e121153afbe</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-31 17:15:58</sys_updated_on>
+        <table>x_821343_hospital_patient_record</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

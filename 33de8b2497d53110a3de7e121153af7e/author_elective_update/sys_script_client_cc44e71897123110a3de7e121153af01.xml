@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>name</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Hospital Management OnChange Script</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   
+      return;
+   }
+
+   var fieldName = 'name';
+	var previousValue = oldValue;
+	var currentValue = newValue;
+   
+	if(previousValue !== currentValue) {
+		var displayField = 'u_short_descriptiion';
+		var displayValue = 'The old patient name was ' + previousValue + '/n The new patirent name is' + currentValue;
+		g_form.setValue(displayField, displayValue);
+	}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-31 16:13:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cc44e71897123110a3de7e121153af01</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Hospital Management OnChange Script</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Hospital Management" source="x_821343_hospital">33de8b2497d53110a3de7e121153af7e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hospital Management">33de8b2497d53110a3de7e121153af7e</sys_scope>
+        <sys_update_name>sys_script_client_cc44e71897123110a3de7e121153af01</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-31 16:33:19</sys_updated_on>
+        <table>x_821343_hospital_patient_record</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Hospital Management">33de8b2497d53110a3de7e121153af7e</application>
+        <file_path/>
+        <instance_id>bdbcf92adbd58510a667cac505961939</instance_id>
+        <instance_name>dev123022</instance_name>
+        <name>sys_script_client_cc44e71897123110a3de7e121153af01</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;name&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Hospital Management OnChange Script&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   
+      return;
+   }
+
+   var fieldName = 'name';
+	var previousValue = oldValue;
+	var currentValue = newValue;
+   
+	if(previousValue !== currentValue) {
+		var displayField = 'u_short_descriptiion';
+		var displayValue = 'The old patient name was ' + previousValue + '/n The new patirent name is' + currentValue;
+		g_form.setValue(displayField, displayValue);
+	}
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-10-31 16:13:53&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;cc44e71897123110a3de7e121153af01&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Hospital Management OnChange Script&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Hospital Management" source="x_821343_hospital"&gt;33de8b2497d53110a3de7e121153af7e&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Hospital Management"&gt;33de8b2497d53110a3de7e121153af7e&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_cc44e71897123110a3de7e121153af01&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-10-31 16:33:19&lt;/sys_updated_on&gt;&lt;table&gt;x_821343_hospital_patient_record&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-570992509</payload_hash>
+        <record_name>Hospital Management OnChange Script</record_name>
+        <reverted_from/>
+        <source>77de4be897d53110a3de7e121153afab</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-31 16:33:19</sys_created_on>
+        <sys_id>325d23d097523110a3de7e121153afac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18b8695163f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-31 16:33:19</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>725da710dd523110d9df6dc8f50015a5</update_guid>
+        <update_guid_history>725da710dd523110d9df6dc8f50015a5:-570992509,31cbe350ce52311029bba3a870f1126e:-1740916754,b69b2b10fb523110ced3f57936fe356d:1818040476,727ba71057523110821ba44f836e9560:-1498722567,8529639cc51231105e3e3a7a369ac049:378156083,16e8abd877123110c9a64c4635d7c4a3:1640013858</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-31 16:35:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>2146134d101747bc8e52ab444a3a5d10</sys_id>
+        <sys_metadata>cc44e71897123110a3de7e121153af01</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hospital Management OnChange Script</sys_name>
+        <sys_package display_value="Hospital Management" source="x_821343_hospital">33de8b2497d53110a3de7e121153af7e</sys_package>
+        <sys_parent display_value="Patient Record">9030136c97d53110a3de7e121153afeb</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Hospital Management">33de8b2497d53110a3de7e121153af7e</sys_scope>
+        <sys_scope_delete display_value="">0b1c2765fbd940008ac79ae2868dba40</sys_scope_delete>
+        <sys_update_name>sys_script_client_cc44e71897123110a3de7e121153af01</sys_update_name>
+        <sys_update_version display_value="sys_script_client_cc44e71897123110a3de7e121153af01">325d23d097523110a3de7e121153afac</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-31 16:35:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>name</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>OnChange Patient Name</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+    if (isLoading || newValue === '') {
+        return;
+    }
+
+    var fieldName = 'name';
+    var previousValue = oldValue;
+    var currentValue = newValue;
+
+    if (previousValue !== currentValue) {
+        g_form.setValue('u_short_description', 'The old patient name was ' + previousValue + '. \n \n The new patient name is ' + currentValue);
+    }
+
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-31 16:36:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>18dd6bd097523110a3de7e121153af9a</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>OnChange Patient Name</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Hospital Management" source="x_821343_hospital">33de8b2497d53110a3de7e121153af7e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hospital Management">33de8b2497d53110a3de7e121153af7e</sys_scope>
+        <sys_update_name>sys_script_client_18dd6bd097523110a3de7e121153af9a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-31 17:07:30</sys_updated_on>
+        <table>x_821343_hospital_patient_record</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_821343_hospital_patient_record</collection>
+        <condition>current.state != previous.state</condition>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_821343_hospital_patient_record">stateVALCHANGES^EQ<item display_value="-- None --" endquery="false" field="state" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>State Change Alert</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[// Create a GlideNotification instance
+var notification = new GlideNotification();
+
+// Set the notification details
+notification.setSubject("State Change Alert");
+notification.setMessage("The state of record " + current.number + " has changed from " + previous.state + " to " + current.state);
+notification.setPriority(GlideNotification.PRIORITY_NORMAL); // Set the priority as needed
+
+// Add recipients - You can specify users, groups, or roles
+notification.addRecipient(current.assigned_to); // Notify the assigned user
+
+// Send the notification
+notification.send();]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-03 14:53:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>64794b5f97213110a3de7e121153af0d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>State Change Alert</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Hospital Management" source="x_821343_hospital">33de8b2497d53110a3de7e121153af7e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Hospital Management">33de8b2497d53110a3de7e121153af7e</sys_scope>
+        <sys_update_name>sys_script_64794b5f97213110a3de7e121153af0d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-03 15:03:21</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=64794b5f97213110a3de7e121153af0d"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Hospital Management">33de8b2497d53110a3de7e121153af7e</application>
+        <file_path/>
+        <instance_id>bdbcf92adbd58510a667cac505961939</instance_id>
+        <instance_name>dev123022</instance_name>
+        <name>sys_script_64794b5f97213110a3de7e121153af0d</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_821343_hospital_patient_record&lt;/collection&gt;&lt;condition&gt;current.state != previous.state&lt;/condition&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="x_821343_hospital_patient_record"&gt;stateVALCHANGES^EQ&lt;item display_value="-- None --" endquery="false" field="state" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;State Change Alert&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[// Create a GlideNotification instance
+var notification = new GlideNotification();
+
+// Set the notification details
+notification.setSubject("State Change Alert");
+notification.setMessage("The state of record " + current.number + " has changed from " + previous.state + " to " + current.state);
+notification.setPriority(GlideNotification.PRIORITY_NORMAL); // Set the priority as needed
+
+// Add recipients - You can specify users, groups, or roles
+notification.addRecipient(current.assigned_to); // Notify the assigned user
+
+// Send the notification
+notification.send();]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-10-03 14:53:03&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;64794b5f97213110a3de7e121153af0d&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;State Change Alert&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Hospital Management" source="x_821343_hospital"&gt;33de8b2497d53110a3de7e121153af7e&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Hospital Management"&gt;33de8b2497d53110a3de7e121153af7e&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_64794b5f97213110a3de7e121153af0d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-10-03 15:03:21&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=64794b5f97213110a3de7e121153af0d"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1248963985</payload_hash>
+        <record_name>State Change Alert</record_name>
+        <reverted_from/>
+        <source>77de4be897d53110a3de7e121153afab</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-03 15:03:21</sys_created_on>
+        <sys_id>004c4b1397613110a3de7e121153afcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18af610a8e30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-03 15:03:21</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>844c4b13f8613110e51f6535c0044aca</update_guid>
+        <update_guid_history>844c4b13f8613110e51f6535c0044aca:1248963985,103c0f1380613110de900865d18640df:-975921163,53fb8f5ffe2131109d4742b87b0af7a3:1640509610,598b0313fc613110f9ebb1fc89c5a86f:-1866045977,91e98bdb232131103ebc959f8da535ee:-124638922</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-03 15:04:40</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>1c85764cf4a547c1b434ac112fb46491</sys_id>
+        <sys_metadata>64794b5f97213110a3de7e121153af0d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>State Change Alert</sys_name>
+        <sys_package display_value="Hospital Management" source="x_821343_hospital">33de8b2497d53110a3de7e121153af7e</sys_package>
+        <sys_parent display_value="Patient Record">9030136c97d53110a3de7e121153afeb</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Hospital Management">33de8b2497d53110a3de7e121153af7e</sys_scope>
+        <sys_scope_delete display_value="">0b1c2765fbd940008ac79ae2868dba40</sys_scope_delete>
+        <sys_update_name>sys_script_64794b5f97213110a3de7e121153af0d</sys_update_name>
+        <sys_update_version display_value="sys_script_64794b5f97213110a3de7e121153af0d">004c4b1397613110a3de7e121153afcb</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-03 15:04:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
