@@ -6,7 +6,7 @@
         <action_insert>false</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
-        <active>true</active>
+        <active>false</active>
         <add_message>false</add_message>
         <advanced>false</advanced>
         <change_fields>false</change_fields>
@@ -40,7 +40,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b48d371497923110a3de7e121153af03</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Test BR</sys_name>
         <sys_overrides/>
         <sys_package display_value="Hospital Management" source="x_821343_hospital">33de8b2497d53110a3de7e121153af7e</sys_package>
@@ -48,7 +48,7 @@
         <sys_scope display_value="Hospital Management">33de8b2497d53110a3de7e121153af7e</sys_scope>
         <sys_update_name>sys_script_b48d371497923110a3de7e121153af03</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-10-31 17:49:12</sys_updated_on>
+        <sys_updated_on>2023-10-31 17:55:00</sys_updated_on>
         <template>date_of_join=2023-10-31^EQ</template>
         <when>before</when>
     </sys_script>
